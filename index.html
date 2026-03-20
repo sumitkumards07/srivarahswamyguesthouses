@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Varahaswamy Guest House | Peaceful Stay in Tirumala</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Comfortable and budget-friendly stay near Tirumala Temple. Book AC and Non-AC rooms at Sri Varahaswamy Guest House for a peaceful pilgrimage.">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Sri Varahaswamy Guest House</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-primary">Book Now</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <img src="assets/hero_tirumala_guesthouse_1774015501222.png" alt="Sri Varahaswamy Guest House Tirumala" class="hero-bg">
+        <div class="container hero-content">
+            <span class="badge">Prime Hilltop Location</span>
+            <h1>Comfortable & Budget Stay Near Tirumala Temple</h1>
+            <p>Peaceful and affordable accommodation located on Tirumala hill. Designed for pilgrims, families, and senior citizens.</p>
+            <div class="hero-btns">
+                <a href="#rooms" class="btn-secondary">View Rooms</a>
+                <a href="https://wa.me/917404139951" class="btn-whatsapp">Book on WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Accommodation</h2>
+                <p>Clean and hygienic rooms at budget-friendly prices.</p>
+            </div>
+            <div class="room-grid">
+                <!-- Non-AC Room - 2 Bed -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="assets/room_ac_luxury_1774015519797.png" alt="Non-AC Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Non-AC Room – 2 Bed</h3>
+                        <p>Comfortable 2-bed non-AC room in Tirumala, ideal for pilgrims and couples.</p>
+                        <div class="price">₹1400 <span>/ Night</span></div>
+                        <div class="room-footer">
+                            <a href="tel:+917404139951" class="btn-call">Call</a>
+                            <button onclick="openBookingModal('Non-AC Room – 2 Bed')" class="btn-wa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AC Room - 2 Bed -->
+                <div class="room-card highlight">
+                    <div class="room-img">
+                        <img src="assets/room_ac_luxury_1774015519797.png" alt="AC Room">
+                        <span class="room-badge">Popular</span>
+                    </div>
+                    <div class="room-info">
+                        <h3>AC Room – 2 Bed</h3>
+                        <p>Air-conditioned 2-bed room in Tirumala offering comfort and peaceful stay.</p>
+                        <div class="price">₹1750 <span>/ Night</span></div>
+                        <div class="room-footer">
+                            <a href="tel:+917404139951" class="btn-call">Call</a>
+                            <button onclick="openBookingModal('AC Room – 2 Bed')" class="btn-wa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AC Family Room -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="assets/room_family_spacious_1774015540681.png" alt="AC Family Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>AC Family Room</h3>
+                        <p>Comfortable AC family room for a relaxing stay in Tirumala suitable for families.</p>
+                        <div class="price">₹2550 <span>/ Night</span></div>
+                        <div class="room-footer">
+                            <a href="tel:+917404139951" class="btn-call">Call</a>
+                            <button onclick="openBookingModal('AC Family Room')" class="btn-wa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Group Stay Room - 8 Bed -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="assets/room_family_spacious_1774015540681.png" alt="Group Stay Room" style="filter: brightness(0.9);">
+                    </div>
+                    <div class="room-info">
+                        <h3>Group Stay Room – 8 Bed</h3>
+                        <p>Large group stay room suitable for 6–8 guests visiting Tirumala together.</p>
+                        <div class="price">₹3200 <span>/ Night</span></div>
+                        <div class="room-footer">
+                            <a href="tel:+917404139951" class="btn-call">Call</a>
+                            <button onclick="openBookingModal('Group Stay Room – 8 Bed')" class="btn-wa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Facilities at Sri Varahaswamy Guest House, Tirumala</h2>
+                <p>Designed to provide a peaceful and convenient experience for every devotee.</p>
+            </div>
+            <div class="facilities-grid">
+                <div class="facility-item">
+                    <div class="icon">📍</div>
+                    <h3>Prime Hilltop Location</h3>
+                    <p>Situated in the sacred Tirumala hill area with quick access to Sri Venkateswara Temple and nearby darshan routes.</p>
+                </div>
+                <div class="facility-item">
+                    <div class="icon">🏘️</div>
+                    <h3>Spacious Private Rooms</h3>
+                    <p>Comfortable rooms designed for families and pilgrims seeking a calm and restful stay after temple visits.</p>
+                </div>
+                <div class="facility-item">
+                    <div class="icon">🧘</div>
+                    <h3>Devotional Atmosphere</h3>
+                    <p>Peaceful surroundings ideal for spiritual relaxation during your Tirumala pilgrimage.</p>
+                </div>
+                <div class="facility-item">
+                    <div class="icon">📞</div>
+                    <h3>Quick Booking Support</h3>
+                    <p>Simple and guided room booking assistance for hassle-free accommodation arrangements.</p>
+                </div>
+                <div class="facility-item">
+                    <div class="icon">✨</div>
+                    <h3>Clean & Maintained Premises</h3>
+                    <p>Hygienic rooms and regularly maintained common areas ensuring a comfortable experience.</p>
+                </div>
+                <div class="facility-item">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <h3>Suitable for All Age Groups</h3>
+                    <p>Ideal accommodation choice for families, senior citizens, and group pilgrims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guest Reviews</h2>
+                <p>What visitors say about their stay.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Very good accommodation in Tirumala top on hill. Rooms were clean and location is very near to temple."</p>
+                    <div class="author">
+                        <strong>Ramesh Kumar</strong>
+                        <span>Pilgrim</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Comfortable family stay in Tirumala. Easy Tirumala hotel booking and peaceful environment for darshan visit."</p>
+                    <div class="author">
+                        <strong>Sujatha Reddy</strong>
+                        <span>Family Guest</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Clean rooms and very helpful staff. The proximity to the temple is the best part. Highly recommended for families."</p>
+                    <div class="author">
+                        <strong>Anand Sharma</strong>
+                        <span>Senior Pilgrim</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Great experience booking through WhatsApp. Quick response and the room was ready when we arrived."</p>
+                    <div class="author">
+                        <strong>Kiran J.</strong>
+                        <span>Devotee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container grid-2">
+            <div class="about-content">
+                <h2>About Sri Varahaswamy Guest House</h2>
+                <p><strong>Why Devotees Choose Our Accommodation in Tirumala</strong></p>
+                <p>Sri Varahaswamy Guest House offers comfortable and affordable rooms in Tirumala top on hill, near Tirumala Temple. Pilgrims looking for guest house in Tirumala, lodge in Tirumala, or private rooms in Tirumala choose our accommodation for its convenient location and peaceful surroundings.</p>
+                <p>Whether you are planning a short darshan visit or an extended family stay in Tirumala, we provide clean rooms, safe environment and easy Tirumala room booking. Our guest house is ideal for devotees searching for rooms in Tirumala near temple, rest house in Tirumala, or budget Tirumala accommodation.</p>
+                <p>Visitors travelling to Tirupati also find our location convenient for both Tirumala and Tirupati hotel booking needs. If you are searching for place to stay in Tirumala top on hill with trusted service, Sri Varahaswamy Guest House is a reliable choice.</p>
+                
+                <div class="booking-advice">
+                    <h4>Seasonal & Booking Tips</h4>
+                    <p>During peak seasons, Brahmotsavam, weekends and festival days, rooms in Tirumala fill quickly. We recommend early Tirumala hotel booking through our website srivarahswamyguesthouses.in. Booking in advance ensures comfortable stay in Tirumala without last-minute stress.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <div class="faq-question">How far is the guest house from Tirumala Temple?</div>
+                    <div class="faq-answer">
+                        <p>Our guest house is located top on hill in Tirumala, near the temple area, making it convenient for darshan and temple visits.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How can I book rooms in Tirumala?</div>
+                    <div class="faq-answer">
+                        <p>You can book rooms easily through our website using the "Book Now" buttons or by contacting us directly on WhatsApp at +91 7404139951.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide family rooms in Tirumala?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer both AC and Non-AC family rooms suitable for 3–5 guests, as well as large group rooms for up to 8 guests.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are the check-in and check-out timings?</div>
+                    <div class="faq-answer">
+                        <p>Our standard check-in time is flexible based on your arrival, and check-out is typically 24 hours from the time of check-in, subject to availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-reach" class="how-to-reach">
+        <div class="container grid-2">
+            <div class="reach-info">
+                <h2>How to Reach</h2>
+                <p>Sri Varahaswamy Guest House is easily accessible from Tirupati and major transport hubs.</p>
+                <div class="reach-item">
+                    <strong>🚗 By Road</strong>
+                    <p>Tirumala is well-connected by a well-maintained ghat road. RTC buses and private taxis are available 24/7 from Tirupati bus stand and railway station.</p>
+                </div>
+                <div class="reach-item">
+                    <strong>🚂 By Rail</strong>
+                    <p>The nearest railway station is Tirupati Main (TPTY). From there, it's a 1-hour drive (22km) to reach Tirumala hill top.</p>
+                </div>
+                <div class="reach-item">
+                    <strong>✈️ By Air</strong>
+                    <p>Tirupati Airport (TIR) at Renigunta is the closest airport, located about 40km from our guest house.</p>
+                </div>
+            </div>
+            <div class="map-box">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.348684784346!2d79.34444537526315!3d13.68222228669477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b2e8a1a2b3d%3A0xc5dae3d82d5d6d3c!2sSri%20Varahaswamy%20Guest%20House!5e0!3m2!1sen!2sin!4v1710940000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <p class="map-caption">📍 Tirumala, Tirupati Urban, Andhra Pradesh 517504</p>
+            </div>
+        </div>
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Sri Varahaswamy Guest House</h3>
+                <p>Tirumala, Tirupati Urban,<br>Andhra Pradesh 517504</p>
+                <p><strong>Email:</strong> srivarahswamyguesthouse@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7404139951</p>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#how-to-reach">How to Reach</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('cancellation')">Cancellation & Refund</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('privacy')">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('terms')">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-cta">
+                <h4>Reserve Now</h4>
+                <a href="https://wa.me/917404139951" class="btn-whatsapp">Book on WhatsApp</a>
+                <p class="notice">This is a privately managed guest house and is not associated with TTD.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sri Varahaswamy Guest House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2>Enquiry for <span id="selectedRoom">Room</span></h2>
+                <p>Please fill in your details to book your stay.</p>
+            </div>
+            <form id="enquiryForm" class="booking-form">
+                <input type="hidden" id="roomTypeInput" name="roomType">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date</label>
+                    <input type="date" id="checkIn" name="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date</label>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                </div>
+                <div class="form-group">
+                    <label for="numGuests">Number of Guests</label>
+                    <input type="number" id="numGuests" name="numGuests" min="1" max="10" placeholder="e.g. 3" required>
+                </div>
+                <button type="submit" class="btn-whatsapp w-100">Send Enquiry on WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Policy Modal -->
+    <div id="policyModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closePolicyModal()">&times;</button>
+            <div id="policyContent">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Booking Modal Logic
+        const bookingModal = document.getElementById('bookingModal');
+        const closeBookingBtn = bookingModal.querySelector('.close-modal');
+        const enquiryForm = document.getElementById('enquiryForm');
+        const selectedRoomSpan = document.getElementById('selectedRoom');
+        const roomTypeInput = document.getElementById('roomTypeInput');
+
+        function openBookingModal(roomName) {
+            selectedRoomSpan.textContent = roomName;
+            roomTypeInput.value = roomName;
+            bookingModal.style.display = 'flex';
+        }
+
+        closeBookingBtn.onclick = () => bookingModal.style.display = 'none';
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+
+        // WhatsApp Form Submission
+        enquiryForm.onsubmit = function(e) {
+            e.preventDefault();
+            const room = roomTypeInput.value;
+            const name = document.getElementById('fullName').value;
+            const checkIn = document.getElementById('checkIn').value;
+            const checkOut = document.getElementById('checkOut').value;
+            const guests = document.getElementById('numGuests').value;
+
+            const message = `Hi, I want to book ${room}.\n\n*Booking Details:*\n- Name: ${name}\n- Check-in: ${checkIn}\n- Check-out: ${checkOut}\n- Guests: ${guests}`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/917404139951?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+            bookingModal.style.display = 'none';
+        };
+
+        // Policy Modal Logic
+        const policyModal = document.getElementById('policyModal');
+        const policyContent = document.getElementById('policyContent');
+
+        const policies = {
+            cancellation: `
+                <h2>Cancellation & Refund Policy</h2>
+                <div class="policy-body">
+                    <p>At Sri Varahaswamy Guest House, we understand that plans can change. Our cancellation policy is designed to be fair to both our guests and our management.</p>
+                    <ul>
+                        <li><strong>Standard Cancellation:</strong> Cancellations made 24 hours or more before the check-in time are eligible for a full refund.</li>
+                        <li><strong>Late Cancellation:</strong> Cancellations made within 24 hours of check-in will incur a charge equivalent to one night's stay.</li>
+                        <li><strong>No-Show:</strong> In case of a no-show, the entire booking amount will be forfeited.</li>
+                        <li><strong>Refund Process:</strong> Approved refunds will be processed back to the original payment method within 5-7 working days.</li>
+                    </ul>
+                </div>
+            `,
+            privacy: `
+                <h2>Privacy Policy</h2>
+                <div class="policy-body">
+                    <p>Your privacy is important to us. This policy describes how we handle your personal information.</p>
+                    <ul>
+                        <li><strong>Data Collection:</strong> We collect only necessary information such as name, contact number, and ID proof for booking purposes.</li>
+                        <li><strong>Data Usage:</strong> Your data is used solely to manage your stay and comply with local regulations.</li>
+                        <li><strong>Third-Party Sharing:</strong> We do not sell or share your personal data with third parties for marketing purposes.</li>
+                        <li><strong>Security:</strong> We implement standard security measures to protect your information from unauthorized access.</li>
+                    </ul>
+                </div>
+            `,
+            terms: `
+                <h2>Terms & Conditions</h2>
+                <div class="policy-body">
+                    <p>By booking a stay at Sri Varahaswamy Guest House, you agree to the following terms:</p>
+                    <ul>
+                        <li><strong>ID Requirement:</strong> All guests must provide a valid government-issued ID at the time of check-in.</li>
+                        <li><strong>Check-in/Check-out:</strong> Our standard check-out is 24 hours from arrival. Early check-in or late check-out is subject to availability.</li>
+                        <li><strong>Occupancy:</strong> Each room has a maximum occupancy limit. Additional guests may incur extra charges.</li>
+                        <li><strong>Prohibited Actions:</strong> Smoke and alcohol are strictly prohibited within the guest house premises to maintain a devotional atmosphere.</li>
+                        <li><strong>Liability:</strong> The guest house is not responsible for any loss or damage to personal belongings.</li>
+                    </ul>
+                </div>
+            `
+        };
+
+        function openPolicyModal(type) {
+            policyContent.innerHTML = policies[type];
+            policyModal.style.display = 'flex';
+        }
+
+        function closePolicyModal() {
+            policyModal.style.display = 'none';
+        }
+
+        // Universal close for modals
+        window.addEventListener('click', (event) => {
+            if (event.target == bookingModal) bookingModal.style.display = 'none';
+            if (event.target == policyModal) closePolicyModal();
+        });
+    </script>
+</body>
+</html>
