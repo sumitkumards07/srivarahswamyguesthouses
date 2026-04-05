@@ -710,7 +710,51 @@ section {
     font-size: 1rem;
 }
 
-/* Responsive */
+/* Floating Contact Buttons for Mobile */
+.floating-contact {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+    justify-content: space-between;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.floating-btn {
+    pointer-events: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: pulse 2s infinite;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
+
+.call-btn {
+    background: #FFAB40; /* Theme primary color */
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+    50% { transform: scale(1.05); box-shadow: 0 4px 25px rgba(0,0,0,0.25); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -733,8 +777,38 @@ section {
         display: flex;
     }
 
+    .floating-contact {
+        display: flex;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        padding-top: 40px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 120px 0 60px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-secondary, .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .navbar .logo {
+        font-size: 1.2rem;
     }
 
     .grid-2 {
